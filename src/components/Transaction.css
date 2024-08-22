@@ -1,0 +1,48 @@
+/* General Table Styles */
+.ant-table {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.ant-table-wrapper {
+    overflow-x: auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .ant-table {
+        font-size: 12px;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        padding: 8px;
+    }
+
+    .ant-table .ant-table-pagination.ant-pagination {
+        margin-right: 16px;
+    }
+
+    .ant-image {
+        max-width: 50px;
+    }
+}
+
+
+.ant-input-search {
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .ant-input-search {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+.ant-table-title strong {
+    font-size: 18px;
+    color: #555;
+}

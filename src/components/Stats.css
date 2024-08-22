@@ -1,0 +1,56 @@
+.container1 {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flex container for statistics */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.stats .ant-statistic {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+/* Flex container for charts */
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bar, .doughunt {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+/* Ensure consistent chart sizing */
+.charts-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .stats .ant-statistic, 
+    .bar, 
+    .doughunt {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .charts-container {
+        flex-direction: column;
+    }
+}
